@@ -99,5 +99,18 @@ article {
 
     .bio-p {
         width: 500px;
+        border: 2px solid black;
+        padding: 10px;
+        background: lightblue;
+    }   
+
+    .pic-bio {
+        display: grid;
+        grid-template-columns: 300px 300px;
+    }
+
+    .biography {
+        display: flex;
+        margin-left: 10px;
     }
   }
