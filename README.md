@@ -1,3 +1,3 @@
-# rb_projects
+# rb_projects code source
 
-# Welcome to the code source of my website
+# You can view the HTML and CSS files.
