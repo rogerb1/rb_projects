@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun:400,500');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+}
+
+p {
+    line-height: 1.5;
+    color: #7b7b7b;
+}
+
+/* Navbar settings */
+
+.nav-links {
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #7b7b7b;
+    padding-left: 15px;
+}
+
+.header {
+    background: lightblue;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    background-color:  #7eb5ff;
+}
+
+.header-msg {
+    padding: 15px;
+}
+
+/* Picture and bio */
+
+.pic {
+    max-width: 100%;
+    height: auto;
+}
+
+.pic-bio {
+    margin: 30px;
+}
+
+.biography {
+    margin-top: 10px;
+    padding: 5px;
+    color: #7b7b7b;
+}
+
+.projects {
+    padding: 30px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Project section */
+
+.project-title {
+    color: #7eb5ff;
+    font-size: 1.5em;
+}
+
+.link {
+    text-decoration: none;
+    margin-top: 10px;
+    color: #fff;
+    font-w: 500;
+}
+
+@media screen and (min-width: 600px) {
+    img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .bio-p {
+        width: 500px;
+    }
+  }
