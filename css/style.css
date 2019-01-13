@@ -57,7 +57,6 @@ p {
 
 .biography {
     margin-top: 10px;
-    padding: 5px;
     color: #7b7b7b;
 }
 
@@ -75,6 +74,10 @@ article {
     justify-content: flex-end;
 }
 
+.card {
+    margin-bottom: 15px;
+}
+
 /* Project section */
 
 .project-title {
@@ -86,7 +89,6 @@ article {
     text-decoration: none;
     margin-top: 10px;
     color: #fff;
-    font-w: 500;
 }
 
 @media screen and (min-width: 600px) {
