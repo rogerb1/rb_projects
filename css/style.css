@@ -93,19 +93,18 @@ article {
 
 @media screen and (min-width: 600px) {
     img {
-        width: 350px;
+        width: 320px;
         height: 350px;
+        grid-column: 2/3;
     }
 
     .bio-p {
-        width: 500px;
-        border: 2px solid black;
-        
+        height: 300px;
     }   
 
     .pic-bio {
         display: grid;
-        grid-template-columns: 300px 300px;
+        grid-template-columns: 1fr 300px 300px 1fr;
     }
 
     .biography {
