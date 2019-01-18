@@ -62,7 +62,7 @@ p {
 
 .projects {
     padding: 30px;
-    background: black;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -88,10 +88,15 @@ article {
 .link {
     text-decoration: none;
     margin-top: 10px;
-    color: #fff;
+    font-size: 1.3em;
+    color:  #7eb5ff;
 }
 
-@media screen and (min-width: 600px) {
+.project-about {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 620px) {
     img {
         width: 320px;
         height: 350px;
@@ -100,15 +105,25 @@ article {
 
     .bio-p {
         height: 300px;
+        color: #333;
     }   
 
     .pic-bio {
         display: grid;
         grid-template-columns: 1fr 300px 300px 1fr;
+        background:#F2D398;
     }
 
     .biography {
         display: flex;
         margin-left: 10px;
+        padding: 10px;
+        background: white ;
+        margin-left: -20px;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
   }
