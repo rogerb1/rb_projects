@@ -1,62 +1,83 @@
 <!doctype html>
-<html lang="en-US">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Roger's Portfolio</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale:1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
-    <nav class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="https://github.com/rogerb1" class="nav-link">Github</a>
-        <a href="https://codepen.io/rogerdavid2/" class="nav-link">CodePen</a>
-        <a href="https://github.com/rogerb1/rb_projects" class="nav-link">[Source Code]</a>
-    </nav>
 
-    <header class="header">
-        <h1 class="header-msg">Hello, I'm Roger</h1>
+<body>
+    <header>
+        <p class="intro">
+            <span>Hello</span> I'm Roger</p>
+        <p class="about">
+            I am passionate about the intersection of code and design. In addition, I enjoy working on data, web development, and user
+            interface design. Below you can find my projects. Email: rogerdavidb57[at]gmail[.]com
+        </p>
     </header>
 
-    <section class="pic-bio">
-        <!---<img src="img/roger-1.jpg" class="pic" alt="Roger's Picture">-->
-        <article class="biography">
-            <p class="bio-p">
-                I am passionate about the intersection of code and design. In addition, I enjoy working on data, web development, and user
-                interface design.
-                <br>
-                <em>Email: rogerdavidb57[at]gmail[.]com</em>
-            </p>
-        </article>
-    </section>
 
     <section class="projects">
-        <h3 class="project-title">
-            Projects
-        </h3>
 
-        <article class="card card-1">
-            <a href="game.html" class="link project-link">Multiplication Game - Desktop Version</a>
-            <section class="project-des">
-                <p class="project-about">
-                    I wanted to program a game with JavaScript in order to practice an object oriented design with the language. This project
-                    was in collaboration with my friend who focused on the design and CSS.
-                </p>
-            </section>
+        <article class="project_cumulation">
+            <p id="project_points_one">
+                Timeline: On going</br>
+                Type: Personal Project</br>
+                Role: Web Developer</br>
+                Tools: HTML, CSS keyframes and grid </br>
+                Skills: Web Development &amp; Responsive Design
+            </p>
+            <p id="project_points_two">
+                <strong>Summary: </strong>Animations have always caught my attention. I wanted to work with css only and create a
+                gallery of animated shapes using keyframes.
+            </p>
         </article>
-        <article class="card card-2">
-            <a href="loaders.html" class=" link project-link-1">CSS Animations</a>
-            <section class="project-des">
-                <p class="project-about">
-                    Animations have always caught my attention. I wanted to work with css only and create a gallery of animated shapes using
-                    keyframes. This is an on going project dedicated to explore the language.
-                </p>
-            </section>
+
+        <article class="project_cumulation" id="color" ontouchstart="">
+            <div class="project_link_wrapper">
+                <a id="project_name" href="loaders.html" target="_blank">CSS Animations</a>
+            </div>
         </article>
+
+        <div class="project_cumulation">
+            <p id="project_points_one">
+                Timeline: On going</br>
+                Type: Collaborative Project </br>
+                Role: JavaScript programmer</br>
+                Skills: Interactive design, Object-Oriented programming
+            </p>
+            <p id="project_points_two">
+                <strong>Summary:</strong> I wanted to program something from scratch using JavaScript in order to get more practice
+                with the language. This project was in collaboration with my friend who focused on the design and CSS. The
+                first idea I had in mind was some sort of interactive game that taught multiplication. Having a background
+                in Java, I looked back into concepts that I learned from taking UW’s CSE 142 class. That said, I developed
+                this game using an object oriented approach.
+            </p>
+        </div>
+
+        <div class="project_cumulation" id="color1" ontouchstart="">
+            <div class="project_link_wrapper">
+                <a id="project_name" href="game.html" target="_blank">Multiplication Game - Desktop Version</a>
+            </div>
+        </div>
     </section>
+
+    <footer ontouchstart="">
+        <ul>
+            <li>
+                <a href="https://github.com/rogerb1">Github</a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/rogerdavid3cf4" target="_blank">Bēhance</a>
+            </li>
+            <li>
+                <a href="https://codepen.io/rogerdavid2/">Codepen</a>
+            </li>
+        </ul>
+    </footer>
 
 </body>
 
