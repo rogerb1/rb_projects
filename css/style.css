@@ -62,7 +62,7 @@ p {
 
 .projects {
     padding: 30px;
-
+    background: black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -97,6 +97,11 @@ article {
 }
 
 @media screen and (min-width: 620px) {
+
+    header {
+
+    }
+
     img {
         width: 320px;
         height: 350px;
@@ -105,25 +110,27 @@ article {
 
     .bio-p {
         height: 300px;
-        color: #333;
+        color: #fff;
     }   
 
     .pic-bio {
         display: grid;
-        grid-template-columns: 1fr 300px 300px 1fr;
-        background:#F2D398;
+        grid-template-columns: 1fr 300px 1fr 300px;
+        background: black;
     }
 
     .biography {
         display: flex;
-        margin-left: 10px;
+        grid-column: 3/4;
         padding: 10px;
-        background: white ;
-        margin-left: -20px;
+
     }
 
     .projects {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        background: #fff;
     }
+
+    .card {}
   }
