@@ -35,7 +35,27 @@ p {
     height: 200px;
     display: flex;
     align-items: flex-end;
-    background-color:  #7eb5ff;
+    animation: changeColor 10s infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        background: #FF495C;
+    }
+
+    25% {
+        background: #256EFF;
+    }
+    50% {
+        background: #3DDC97;
+    }
+    75% {
+        background: #7eb5ff;
+    }
+
+    100% {
+        background: #FF495C;
+    }
 }
 
 .header-msg {
@@ -52,7 +72,8 @@ p {
 }
 
 .pic-bio {
-    margin: 30px;
+    margin: 15px;
+    height: 200px;
 }
 
 .biography {
@@ -61,27 +82,31 @@ p {
 }
 
 .projects {
-    padding: 30px;
-    background: black;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-
-article {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .card {
     margin-bottom: 15px;
+    border: 2px solid;
+    width: 300px;
+    padding: 15px;
 }
 
+.card-1 {
+    border: 2px solid #7eb5ff;
+}
+
+.card-2 {
+    border: 2px solid palegreen;
+}
 /* Project section */
 
 .project-title {
-    color: #7eb5ff;
+    margin-bottom: 15px;
+    color: #333;
     font-size: 1.5em;
 }
 
@@ -89,7 +114,7 @@ article {
     text-decoration: none;
     margin-top: 10px;
     font-size: 1.3em;
-    color:  #7eb5ff;
+    color:  #333;
 }
 
 .project-about {
@@ -98,39 +123,29 @@ article {
 
 @media screen and (min-width: 620px) {
 
-    header {
-
-    }
-
     img {
         width: 320px;
         height: 350px;
-        grid-column: 2/3;
     }
 
     .bio-p {
         height: 300px;
-        color: #fff;
+        color:  #7b7b7b;
+        grid-column: 1/2;
     }   
 
     .pic-bio {
         display: grid;
         grid-template-columns: 1fr 300px 1fr 300px;
-        background: black;
     }
 
     .biography {
         display: flex;
-        grid-column: 3/4;
-        padding: 10px;
-
+        grid-column: 1/2;
     }
 
     .projects {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background: #fff;
+        flex-direction: row;
+        justify-content: space-between;
     }
-
-    .card {}
   }
