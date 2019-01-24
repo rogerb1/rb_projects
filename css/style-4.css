@@ -39,7 +39,7 @@ a {
 .card-container {
     display: grid;
     padding: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
 }
 
@@ -50,7 +50,7 @@ a {
 }
 
 .card-title {
-    display: flex;
+    display: none;
     justify-content: center;
     font-size: 17px;
     background: hsl(220, 12%, 95%);
@@ -101,8 +101,6 @@ a {
         opacity: 1;
     }
 }
-
-
 
 /* Loader settings */
 
