@@ -17,6 +17,13 @@ li {
     padding: 15px;
 }
 
+ul {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
 a {
     transition: .7s ease;
     text-decoration: none;
@@ -36,20 +43,22 @@ a:active{
 header {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 500px;
     flex-direction: column;
+    height: 530px;
     background-color: #a3e1ff;
     background-image: -webkit-linear-gradient(30deg, #def5ffa3 50%, #fff 50%);
 }
 
 .intro {
-    font-size: 2em;
+    margin-left: 40px;
     font-weight: bolder;
+    font-size: 2em;
 }
 
 .about {
-    width: 300px;
+    margin-left: 40px;
+    font-size: 1.3em;
+    width: 500px;
 }
 
 span {
@@ -61,8 +70,6 @@ span {
     display: flex;
     flex-wrap: wrap;
 }
-
-/*side one*/
 
 .project_cumulation {
     background-color: #fff;
@@ -79,14 +86,16 @@ span {
     line-height: 2.3;
 }
 
+/*** Background color for projects*/
+
+/* Project 1*/
 #color {
-    background-color: #4766A5;
+    background-color: #334E58;
     width: 50%;
     transition: 1s ease;
 }
 
-/*Background color for projects*/
-
+/* Project 2*/
 #color1 {
     background-color: #3423A6;
 }
@@ -107,61 +116,94 @@ span {
     color: #333;
 }
 
+/* Footer contents *****/
+
 footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 20vh;
     width: 100%;
     background-color: black;
 }
 
-ul {
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
-}
 
 /* For smaller screens  */
 
 @media screen and (max-width: 870px){
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-    #about-2{
+    .intro {
+        margin-left: 0px;
+        text-align: left;
+    }
+    
+    .about {
+        margin-left: 10px;
+        font-size: 1.2em;
+        width: 300px;
+    }
+
+    #about-2 {
         width: 350px;
         margin-left: 12px;
         font-size: 1.3em;
         color:  black;
     }
 
-    .projects{
+    .projects {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .project_points_one{
+    .project_points_one {
         padding: 50px;
     }
 
-    .project_cumulation{
+    .project_cumulation {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
     }
 
-    #project_name{
+    #project_name {
         color: #fff;
     }
-    #color{
+
+    #color{ 
         width: 100%;
-        background-color: #4766A5;
     }
 
-    #about{
+    #about {
         width: 300px;
     }
 
-    li{
+    /* Footer contents */
+
+    li {
         padding: 10px;
+        margin-left: 10px;
+    }
+
+    ul {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        text-decoration: none;
+        margin-left: 15px;
+    }
+    
+    footer {
+        display: flex;
+        align-items: flex-start;
+        height: 190px;
+        width: 100%;
+        background-color: black;
     }
 }
 
@@ -169,5 +211,4 @@ ul {
     #about-2{
         width: 600px;
     }
-
 }
