@@ -101,6 +101,10 @@ span {
     background-color: #3423A6;
 }
 
+#color2 {
+    background-color: firebrick;
+}
+
 .project_link_wrapper {
     justify-content: center;
     display: flex;

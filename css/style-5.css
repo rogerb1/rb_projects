@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/** Mobile Navigation Settings ******************************/
+
+nav {
+  max-width: 100%;
+  width: 100%;
+}
+
+#checkbox3,
+.toggle {
+  display: none;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  height: 60px;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  align-self: center;
+  font-size: 1.2em;
+  padding: 16px 20px;
+
+}
+
+@media screen and (max-width: 600px) {
+  .menu li a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 2.3em;
+    line-height: 40px;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    color: black;
+
+    transition: all .1s linear;
+  }
+  .toggle:hover {
+    background: #cecece;
+  }
+
+  #checkbox3:checked + label .third li {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s linear;
+  }
+
+  #checkbox3:checked + label .third {
+    height: 200px;
+  }
+
+  .menu {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: height .3s linear;
+  }
+
+  .menu li {
+    display: flex;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+
+    /* magic */
+    align-self: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .menu li a {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    font-size: 1.3em;
+    align-content: center;
+  }
+}
+
+.third {
+  background: #eee;
+}
+
+.third li a {
+  color: #606060;
+}
+
+.third li a:hover {
+  background: #d5d5d5;
+}
+
+body {
+  background: #FFF;
+}
+
+/********************* HEADER **********************************/
+header {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    background-color: #334E58;     /* Change header color */
+}
+
+#header_title {
+    padding-bottom: 15px;
+    font-size: 2.5em;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+#header_p {
+    color: #fff;
+    font-size: 1.3em;
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 300;
+}
+
+/*********************** CARD CONTAINER *****************************/
+
+.card_container {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    height: 330px;
+    background-color: #F6F6F8;
+    justify-content: space-around;
+}
+
+/*** Card Composition *****/
+
+.three{
+    width: 300px;
+    height: 270px;
+    margin: 4em;
+    margin-top: -75px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.card_title {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color:#fff;
+    padding: 32px;
+}
+
+.card_link {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-direction: column;
+    -webkit-box-shadow: 3px 7px 6px -6px #777;
+    -moz-box-shadow: 3px 7px 6px -6px #777;
+     box-shadow: 3px 7px 6px -6px #777;
+}
+
+/* Change Card Colors Here */
+
+ #first_color {
+    background-color: black;
+}
+
+#one:hover {
+    background-color: #734872;
+}
+
+#second_color {
+    background-color: #5C6D70;
+
+}
+
+#third_color {
+    background-color: #242038;
+}
+
+/* Change Card Color Buttons Here */
+#one:hover {
+    background-color: #231f1f;
+}
+
+#one {
+    background-color: black;
+}
+
+#two {
+    background-color:  #747c7d;
+}
+
+#two:hover {
+    background-color: #4a5a5d;
+}
+
+#tres {
+    background-color: #242038;
+}
+
+#tres:hover {
+    background-color: #47435d;
+}
+
+/* Card paragraph and Links */
+
+#card_p {
+    padding-top: 20px;
+    padding: 25px;
+    font-size: 1.2em;
+    width: 300px;
+    color: #5D5D5D;
+}
+
+.card_link{
+    display: flex;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 5px;
+    width: 50%;
+    padding: 8px;
+    margin-left: 30px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+/************************** About yourself and interset section *******************/
+
+/* LEFT SIDE the about yourself section */
+.summary{
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    background: #5B7DAC;
+    height: 360px;
+}
+
+.sub_container {
+    width: 50%;
+    padding: 40px;
+}
+ 
+#summary_title {
+    color: #fff;
+    padding-bottom: 10px;
+    display: flex;
+    text-shadow: #587DAC 0px 0px 5px;
+}
+
+#summary_p {
+  text-shadow: #587DAC 3px 3px 5px;
+  width: 400px;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/* Right side your interest section */
+.summary #grey{
+    background-color: #231f1f;
+    color: #afa4a4;
+}
+
+#visit_title {
+    color: lightblue;
+}
+
+#place {
+    padding-bottom: 5px;
+    margin-left: 3px;
+}
+
+#v_adress {
+    padding-top: 10px;
+}
+
+/***** Footer Content ******************/
+
+footer {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-around;
+    height: 35vh;
+    line-height: 2.4;
+    color: #333;
+    border-color: #f9f9fa;
+    color: #5D5D5D;
+}
+
+#title_list {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.footer_list {
+    list-style-type: none;
+}
+
+li:hover {
+ text-decoration: underline;
+ cursor: pointer;
+}
+
+#copyright {
+    font-weight: bold;
+}
+
+#copyright:hover {
+    text-decoration: none;
+}
+
+/******** Media Queries for smaller screens ***********************************/
+@media screen and (max-width: 980px) {
+    #header_title {
+        font-size: 2.3em;
+    }
+
+    #header_p {
+        font-size: 1.5em;
+    }
+
+    /* Card settings for smaller screens */
+    .card_container {
+        display: flex;
+        height: 1000px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .card_title{
+        padding: 10px;
+    }
+
+    /* End card settings */
+
+    .summary{
+        flex-wrap: wrap;
+        padding-bottom: 200px;
+        height: 60vh;
+    }
+
+    .sub_container{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 40px;
+        height: 300px;
+    }
+
+    #summary_p {
+        width: 300px;
+        font-size: 1em;
+
+    }
+     
+    footer {
+      margin-top: 240px;
+      height: 500px;
+      margin-left: 25px;
+      font-size: .9em;
+      flex-direction:column;
+       -webkit-flex-direction: column;
+       -moz-flex-direction: column;
+       -ms-flex-direction: column;
+       -o-flex-direction: column;
+    }
+
+    .footer_1{
+    flex-wrap: wrap;
+    flex-direction: column;
+       -webkit-flex-direction: column;
+       -moz-flex-direction: column;
+       -ms-flex-direction: column;
+       -o-flex-direction: column;
+    }
+
+    .footer_list{
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+
+        justify-content: space-between;
+        flex-direction: column;
+        flex-direction: column;
+       -webkit-flex-direction: column;
+       -moz-flex-direction: column;
+       -ms-flex-direction: column;
+       -o-flex-direction: column;
+    }
+
+    li {
+        flex-wrap: wrap;
+    }
+}
