@@ -10,6 +10,7 @@
 
 p {
     line-height: 1.5;
+    font-size: 1.1em;
     color: #7b7b7b;
 }
 
@@ -195,7 +196,7 @@ footer {
         flex-direction: column;
         list-style-type: none;
         text-decoration: none;
-        margin-left: 15px;
+        margin-left: 10px;
     }
     
     footer {
