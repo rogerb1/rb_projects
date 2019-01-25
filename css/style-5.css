@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
 * {
     margin: 0;
-    box-sizing: border-box;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Karla', sans-serif;
 }
 
@@ -11,147 +11,12 @@ p {
     font-size: 1.2em;
 }
 
-/** Mobile Navigation Settings ******************************/
-
-nav {
-  max-width: 100%;
-  width: 100%;
-}
-
-#checkbox3,
-.toggle {
-  display: none;
-}
-
-.menu {
-  padding: 0;
-  margin: 0;
-  max-width: 100%;
-  height: 60px;
-  display: flex;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  -o-flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-}
-
-.menu li a {
-  text-decoration: none;
-  align-self: center;
-  font-size: 1.2em;
-  padding: 16px 20px;
-
-}
-
-@media screen and (max-width: 600px) {
-  .menu li a {
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .toggle {
-    clear: both;
-    display: block;
-    text-align: center;
-    font-size: 2.3em;
-    line-height: 40px;
-    cursor: pointer;
-    width: 100%;
-    height: 50px;
-    color: black;
-
-    transition: all .1s linear;
-  }
-  .toggle:hover {
-    background: #cecece;
-  }
-
-  #checkbox3:checked + label .third li {
-    opacity: 1;
-    visibility: visible;
-    transition: all .7s linear;
-  }
-
-  #checkbox3:checked + label .third {
-    height: 200px;
-  }
-
-  .menu {
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 0px;
-    transition: height .3s linear;
-  }
-
-  .menu li {
-    display: flex;
-   display: -webkit-box;
-   display: -moz-box;
-   display: -ms-flexbox;
-   display: -webkit-flex;
-
-    /* magic */
-    align-self: center;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .menu li a {
-    width: 100%;
-    text-align: center;
-    align-self: center;
-    font-size: 1.3em;
-    align-content: center;
-  }
-}
-
-.third {
-  background: #eee;
-}
-
-.third li a {
-  color: #606060;
-}
-
-.third li a:hover {
-  background: #d5d5d5;
-}
-
-body {
-  background: #FFF;
-}
-
 /********************* HEADER **********************************/
 header {
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 500px;
     padding: 30px;
     background-color: #334E58;     /* Change header color */
@@ -175,15 +40,7 @@ header {
 
 .card_container {
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     flex-direction: row;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    -o-flex-direction: row;
     height: 330px;
     background-color: #F6F6F8;
     justify-content: space-around;
@@ -197,8 +54,6 @@ header {
     margin: 4em;
     margin-top: -75px;
     background-color: #fff;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
 }
 
@@ -212,15 +67,9 @@ header {
 
 .card_link {
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-content: flex-end;
-    flex-direction: column;
-    -webkit-box-shadow: 3px 7px 6px -6px #777;
-    -moz-box-shadow: 3px 7px 6px -6px #777;
     box-shadow: 3px 7px 6px -6px #777;
 }
 
@@ -280,10 +129,6 @@ header {
 
 .card_link {
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     justify-content: center;
     color: #fff;
     text-decoration: none;
@@ -295,67 +140,59 @@ header {
     cursor: pointer;
 }
 
-/************************** About yourself and interset section *******************/
+/************************** About yourself and interests section *******************/
 
-/* LEFT SIDE the about yourself section */
 .summary {
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    background: #5B7DAC;
-    height: 360px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .sub_container {
-    width: 50%;
     padding: 40px;
+    height: 320px;
 }
- 
+
+/* Right side your about yourself section */
+.right {
+    grid-column: 1/2;
+    background: #5B7DAC;
+}
+
 #summary_title {
+    font-size: 1.4em;
     color: #fff;
     padding-bottom: 10px;
     display: flex;
-    text-shadow: #587DAC 0px 0px 5px;
 }
 
 #summary_p {
-  text-shadow: #587DAC 3px 3px 5px;
-  width: 400px;
-  color: #fff;
+    width: 400px;
+    color: #fff;
 }
 
-/* Right side your interest section */
-.summary #grey {
+/* Left side your interest section */
+.left {
+    grid-column: 2/3;
     background-color: #231f1f;
-    color: #afa4a4;
+    color: #fff;
 }
 
 #visit_title {
+    font-size: 1.4em;
     color: lightblue;
 }
 
 #place {
     padding-bottom: 5px;
-    margin-left: px;
-}
-
-#v_adress {
-    padding-top: 10px;
 }
 
 /***** Footer Content ******************/
 
 footer {
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     justify-content: space-around;
+    line-height: 2.3;
     height: 200px;
-    line-height: 2.4;
     color: #5D5D5D;
 }
 
@@ -382,7 +219,7 @@ li:hover {
 }
 
 /******** Media Queries for smaller screens ***********************************/
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 800px) {
     #header_title {
         font-size: 2.3em;
     }
@@ -395,7 +232,11 @@ li:hover {
     .card_container {
         display: grid;
         grid-template-columns: 1fr;
-        height: 910px;
+        height: 1100px;
+    }
+
+    .three {
+        margin-top: 30px;
     }
 
     .card_title{
@@ -403,15 +244,9 @@ li:hover {
     }
 
     .summary {
-        display: grid;
-        grid-template-columns: 1fr;
-        height: 600px;
-    }
-
-    .sub_container {
-        width: 100%;
-        padding: 40px;
-        height: 300px;
+        display: flex;
+        flex-direction: column;
+   
     }
 
     #summary_p {
@@ -419,28 +254,17 @@ li:hover {
     }
      
     footer {
+        display: grid;
+        grid-template-columns: 1fr;
       padding: 40px;
       font-size: .9em;
       height: 500px;
-      flex-direction: column;
-      -webkit-flex-direction: column;
-       -moz-flex-direction: column;
-       -ms-flex-direction: column;
-       -o-flex-direction: column;
     }
 
     .footer_list{
         display: flex;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        justify-content: space-between;
         flex-direction: column;
-       -webkit-flex-direction: column;
-       -moz-flex-direction: column;
-       -ms-flex-direction: column;
-       -o-flex-direction: column;
+        justify-content: space-between;
     }
 
     li {
