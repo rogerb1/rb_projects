@@ -18,8 +18,8 @@ header {
     justify-content: center;
     align-items: center;
     height: 500px;
-    padding: 30px;
-    background-color: #334E58;     /* Change header color */
+    padding: 40px;
+    background-color: #080705;     /* Change header color */
 }
 
 #header_title {
@@ -32,7 +32,7 @@ header {
 #header_p {
     color: #fff;
     font-size: 1.3em;
-    margin-left: 20px;
+    margin-left: 0px;
     font-weight: 300;
 }
 
