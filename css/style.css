@@ -198,7 +198,7 @@ footer {
     ul {
         margin-top: 10px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         list-style-type: none;
         text-decoration: none;
         margin-left: 10px;
