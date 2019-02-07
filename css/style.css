@@ -1,12 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://rsms.me/inter/inter.css');
 
 /* General settings */
 * {
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Inter', sans-serif; 
 }
 
 p {
