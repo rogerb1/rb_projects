@@ -205,9 +205,11 @@ footer {
     }
     
     footer {
-        height: 120px;
+        display: flex;
+        flex-direction: row;
+        height: 190px;
         width: 100%;
-        background-color: black;
+        background: palevioletred;
     }
 }
 
