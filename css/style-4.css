@@ -325,3 +325,32 @@ Begin Loader Code
         transform: translateX(15px);
     }
 }
+
+/******* Loader #10: Line up **********/
+.loader-11 {
+    background-color: #531CB3;
+}
+
+
+.eleven {
+    width: 35px;
+    height: 15px;
+    border-radius: 25px;
+    background-color: #F4F4ED;
+    animation: theEleventh .7s ease infinite;
+}
+
+.eleven-part-1 {
+
+}
+
+@keyframes theEleventh {
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: skew(50deg);
+    }
+}
+
