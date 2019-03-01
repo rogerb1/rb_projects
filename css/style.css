@@ -29,6 +29,18 @@ p {
     height: 60px;
 }
 
+button {
+    border: 1px solid black;
+    color: #333;
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.about-2-title {
+    height: 60px;
+}
+
 .nav-link {
     color: #A0A09F;
     margin-left: 25px;
