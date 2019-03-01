@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif; 
+}
+
+@supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
 }
 
 a {
@@ -23,16 +28,16 @@ p {
 }
 
 .nav-link {
-    color: #333;
+    color: #A0A09F;
     margin-left: 25px;
     font-weight: bold;
     padding: 10px;
-    font-size: 18px;
-    transition: .4s ease-in;
+    font-size: 16px;
+    transition: .6s ease-in-out;
 }
 
 .nav-link:hover {
-    color: hsl(204, 86%, 53%);
+     color: #32E3C2
 }
 
 header {
@@ -45,14 +50,17 @@ header {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 50px;
+    font-family: 'Cedarville Cursive', cursive;
 }
+
+
 
 .about {
     font-size: 24px;
     font-weight: bold;
     width: 650px;
-    color: hsl(204, 86%, 53%);
+    color: #32E3C2;
 }
 
 .work-intro {
@@ -70,6 +78,7 @@ h2 {
 .whole-project {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     margin-bottom: 70px;
 }
 
@@ -90,13 +99,14 @@ img {
 
 h3 {
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .project-link {
     border: 1px solid black;
-    padding: 10px;
+    padding: 15px;
     font-weight: bold;
-    color: hsl(204, 86%, 53%);
+     color: #32E3C2;
 }
 
 @media screen and (max-width: 800px) {
@@ -109,7 +119,7 @@ h3 {
     }
 
     img {
-        width: 350px;
+        width: 330px;
         height: 300px;
         object-fit: cover;
     }
