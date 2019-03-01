@@ -12,6 +12,7 @@
     html { font-family: 'Inter var', sans-serif; }
 }
 
+/* General settings */
 a {
     text-decoration: none;
 }
@@ -20,6 +21,7 @@ p {
     line-height: 1.6;
 }
 
+/* Navigation bar */
 .nav-bar {
     display: flex;
     align-items: center;
@@ -39,6 +41,7 @@ p {
      color: #32E3C2
 }
 
+/* Header */
 header {
     padding: 30px;
     display: flex;
@@ -54,13 +57,10 @@ h2 {
     color: #32E3C2;
 }
 
-
-
 .about {
     font-size: 24px;
     font-weight: bold;
-    width: 650px;
-    
+    width: 650px; 
 }
 
 .work-intro {
@@ -79,16 +79,18 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 0px;
 }
 
 .skills-used {
     color: #3e3e3e;
-    margin-bottom: 5px;
+    font-size: 17px;
+    margin-bottom: 10px;
 }
 
 .project-des {
-    margin-bottom: 50px;
+    font-size: 17px;
+    margin-bottom: 30px;
 }
 
 img {
@@ -105,7 +107,7 @@ h3 {
 
 .project-link {
     border: 1px solid black;
-    padding: 15px;
+    padding: 10px;
     font-weight: bold;
     color: #32E3C2;
     transition: .3s ease-in-out;
@@ -127,6 +129,7 @@ footer {
 @media screen and (max-width: 800px) {
     .whole-project {
         grid-template-columns: 1fr;
+        grid-gap: 20px;
     }
 
     .projects {
@@ -145,5 +148,8 @@ footer {
 
     footer {
         padding: 20px;
+    }
+    h3 {
+        margin-top: -40px;
     }
 }
