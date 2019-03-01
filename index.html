@@ -1,98 +1,89 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale:1.0, maximum-scale=1.0">
+    <title>Roger Benjume- Web designer</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta property="og:descritpion" content="Roger Benjume's official website, a desinger with a focus on user experience.">
+    <meta property="og:url" content="">
 </head>
 
+
+
 <body>
+    <nav class="nav-bar">
+        <a class="nav-link" href="https://github.com/rogerb1">Github</a>
+        <a class="nav-link" class="nav-link" href="https://github.com/rogerb1/rb_projects/tree/gh-pages">[Source]</a>
+        <a class="nav-link" href="https://codepen.io/rogerdavid2/">Codepen</a>
+        <a class="nav-link" href="https://www.behance.net/rogerdavid3cf4" target="_blank">Bēhance</a>
+    </nav>
+
     <header>
-        <article class="name-container">
-            <p class="intro">
-                <span>Hi</span> I'm Roger,</p>
-        </article>
+        <h2>Hello</h2>
         <p class="about">
-            I am passionate about data, web development, and user interface design. Email: rogerdavidb57[at]gmail[.]com
+            I'm Roger Benjume, a student passionate about data, web development, and user interface design.
         </p>
     </header>
 
-    <section class="projects">
-        <div class="project_cumulation">
-            <p id="project_points_one">
-                Timeline: January 2019</br>
-                Type: Personal Project </br>
-                Role: Web Developer and Designer</br>
-                Skills: CSS Architecture and User Experience Design
-            </p>
-            <p id="project_points_two">
-                <strong>Summary:</strong> Ever wanted to build a website and not have time? Here is a free downloadable responsive
-                website template built from scratch. To download go to my GitHub and look for the "website template" repository.
-            </p>
-        </div>
-
-        <div class="project_cumulation" id="color2" ontouchstart="">
-            <div class="project_link_wrapper">
-                <a id="project_name" href="template.html" target="_blank">Website Template</a>
-            </div>
-        </div>
-        <div class="project_cumulation">
-            <p id="project_points_one">
-                Timeline: August 2018</br>
-                Type: Collaborative Project </br>
-                Role: JavaScript Programmer</br>
-                Skills: Interactive Design, Object Oriented Programming
-            </p>
-            <p id="project_points_two">
-                <strong>Summary:</strong> I wanted to build an interactive game that taught multiplication. Having taken UW’s CSE
-                142 class, I developed this game using an object oriented approach.
-            </p>
-        </div>
-
-        <div class="project_cumulation" id="color1" ontouchstart="">
-            <div class="project_link_wrapper">
-                <a id="project_name" href="game.html" target="_blank">Multiplication Game - DESKTOP VERSION</a>
-            </div>
-        </div>
-
-        <article class="project_cumulation">
-            <p id="project_points_one">
-                Timeline: On going</br>
-                Type: Personal Project</br>
-                Role: Web Developer and Designer</br>
-                Tools: HTML and CSS</br>
-                Skills: Web Animation
-            </p>
-            <p id="project_points_two">
-                <strong>Summary: </strong> This project is dedicated to creating shapes and animations with CSS only.
-            </p>
-        </article>
-        <article class="project_cumulation" id="color" ontouchstart="">
-            <div class="project_link_wrapper">
-                <a id="project_name" href="loaders.html" target="_blank">CSS Animations</a>
-            </div>
+    <section class="work-intro">
+        <article class="work-des">
+            <h2 class="work">Projects</h2>
         </article>
     </section>
 
-    <footer ontouchstart="">
-        <ul>
-            <li>
-                <a href="https://github.com/rogerb1">Github</a>
-            </li>
-            <li>
-                <a href="https://github.com/rogerb1/rb_projects/tree/gh-pages">[Source]</a>
-            </li>
-            <li>
-                <a href="https://codepen.io/rogerdavid2/">Codepen</a>
-            </li>
-            <li>
-                <a href="https://www.behance.net/rogerdavid3cf4" target="_blank">Bēhance</a>
-            </li>
-        </ul>
-    </footer>
+    <section class="projects">
+        <div class="whole-project">
+            <article class="picture-container">
+                <img src="img/template.jpg" alt="template picture">
+            </article>
+            <article class="project-title">
+                <h3>Website Template</h3>
+                <p class="skills-used">Skills: web development / ux design / wireframing </p>
+                <p class="project-des">
+                    I wanted to make a responsive website template from scratch. This website was made integrating CSS grid and flexbox.
+                </p>
+                <a class="project-link" href="template.html">Check it out</a>
+            </article>
 
+        </div>
+
+        <div class="whole-project">
+            <article class="picture-container">
+                <img src="img/game.jpg" alt="game picture">
+            </article>
+            <article class="project-title">
+                <h3>Multiplication Game</h3>
+                <p class="skills-used">Skills: interactive design / javascript programming</p>
+                <p class="project-des">
+                    When I learned my x's table it was by memory, however I wanted to build an interactive game that teaches multiplication.
+                    This game was built from scratch with javascript, html and css.
+                </p>
+                <a class="project-link" href="game.html">Check it out</a>
+            </article>
+        </div>
+
+        <div class="whole-project">
+            <article class="picture-container">
+                <img src="img/loaders.jpg" alt="loaders picture">
+            </article>
+            <article class="project-title">
+                <h3>CSS Loader Animations</h3>
+                <p class="skills-used">Skills: css animations / keyframes / physics</p>
+                <p class="project-des">
+                    This is an ongoing project dedicated to creating loaders with CSS only. I am sticking to CSS only to really explore the possiblities
+                    of the language.
+                </p>
+                <a class="project-link" href="loaders.html">Check it out</a>
+            </article>
+        </div>
+    </section>
 </body>
+<script>
+
+</script>
+
 
 </html>
