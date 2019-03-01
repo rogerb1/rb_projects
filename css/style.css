@@ -12,7 +12,7 @@ a {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .nav-bar {
@@ -75,6 +75,7 @@ h2 {
 
 .skills-used {
     color: #3e3e3e;
+    margin-bottom: 5px;
 }
 
 .project-des {
@@ -93,8 +94,28 @@ h3 {
 
 .project-link {
     border: 1px solid black;
-
     padding: 10px;
     font-weight: bold;
     color: hsl(204, 86%, 53%);
+}
+
+@media screen and (max-width: 800px) {
+    .whole-project {
+        grid-template-columns: 1fr;
+    }
+
+    .projects {
+        padding: 20px;
+    }
+
+    img {
+        width: 350px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .about {
+        width: 320px;
+    }
+    
 }
