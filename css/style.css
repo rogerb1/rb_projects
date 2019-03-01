@@ -109,6 +109,11 @@ img {
     width: 400px;
     height: 300px;
     object-fit: contain;
+    transition: .4s ease-in;
+}
+
+img:hover {
+    transform: scale(0.8);
 }
 
 h3 {
