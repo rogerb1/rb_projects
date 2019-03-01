@@ -91,8 +91,7 @@ h2 {
 .whole-project {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-    margin-bottom: 0px;
+    grid-gap: 40px;
 }
 
 .skills-used {
@@ -113,7 +112,7 @@ img {
 }
 
 h3 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -132,6 +131,7 @@ h3 {
 }
 
 footer {
+    margin-top: 25px;
     padding: 50px;
 }
 
@@ -162,7 +162,8 @@ footer {
     footer {
         padding: 20px;
     }
+
     h3 {
-        margin-top: -40px;
+        margin-top: -30px;
     }
 }
