@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+header, section {
+    padding: 5px;
+}
+
+header {
+    height: 400px;
+}
+
+.data-link {
+    color: blue;
+}
+
+.first-chart {
+    margin: 10px;
+}
+
+.first-description {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: circle;
+}
