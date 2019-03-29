@@ -11,6 +11,12 @@
     html { font-family: 'Inter var', sans-serif; }
 }
 
+
+/* CSS variables */
+:root {
+    --primary-color: #3494d0;
+}
+
 /* General settings */
 a {
     text-decoration: none;
@@ -50,7 +56,7 @@ button {
 }
 
 .nav-link:hover {
-     color: #32E3C2
+     color: var(--primary-color);
 }
 
 /* Header */
@@ -66,7 +72,7 @@ header {
 h2 {
     font-size: 50px;
     font-weight: 300;
-    color: #32E3C2;
+    color: var(--primary-color);
 }
 
 .about {
@@ -121,7 +127,7 @@ h3 {
     border: 1px solid black;
     padding: 10px;
     font-weight: bold;
-    color: #32E3C2;
+    color: var(--primary-color);
     transition: .3s ease-in-out;
 }
 
@@ -149,10 +155,16 @@ footer {
         padding: 30px;
     }
 
+    .work-intro {
+        justify-content: flex-start;
+        padding: 30px;
+    }
+
     img {
         width: 330px;
         height: 300px;
         object-fit: contain;
+        
     }
 
     .about {
@@ -165,5 +177,9 @@ footer {
 
     h3 {
         margin-top: -30px;
+    }
+
+    .project-title {
+        
     }
 }
