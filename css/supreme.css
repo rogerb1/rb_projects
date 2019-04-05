@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Libre+Barcode+39');
+
+* {
+    font-family: 'Libre Barcode 39', cursive;
+font-family: 'Anton', sans-serif;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: red;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    animation: moveUp .1s ease-in;
+    transition: 4s ease-in;
+}
+
+article:hover {
+    cursor: pointer;
+    background: black;
+}
+
+h1 {
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+@keyframes moveUp {
+    50%  {
+        transform: translateY(2px);
+    }
+}
