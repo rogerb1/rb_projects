@@ -14,7 +14,7 @@
 
 /* CSS variables */
 :root {
-    --primary-color: #3494d0;
+    --primary-color: #1F2933;
 }
 
 /* General settings */
@@ -67,17 +67,24 @@ header {
     justify-content: center;
     align-content: flex-end;
     height: 500px;
+    background: #e8effa;
 }
 
+
+.header-intro {
+    font-size: 33px;
+    width: 430px;
+    color: var(--primary-color);
+}
+
+
 h2 {
-    font-size: 50px;
-    font-weight: 300;
+    font-size: 35px;
     color: var(--primary-color);
 }
 
 .about {
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 23px;
     width: 650px; 
 }
 
@@ -123,16 +130,26 @@ h3 {
     font-size: 20px;
 }
 
-.project-link {
+.link-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-link, .project-link-1 {
     border: 1px solid black;
     padding: 10px;
     font-weight: bold;
     color: var(--primary-color);
-    transition: .3s ease-in-out;
+    transition: .3s ease-in;
 }
 
 .project-link:hover {
     background: #333;
+    color: #fff;
+}
+
+.project-link-1:hover {
+    background:darkblue;
     color: #fff;
 }
 
