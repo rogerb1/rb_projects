@@ -36,7 +36,7 @@ span {
     display: grid;
     grid-gap: 35px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px 300px 300px 300px 300px 50px;
+    grid-template-rows: 80px 400px 300px 300px 300px 50px;
 }
 
 /* Navigation Settings *************/
@@ -74,7 +74,7 @@ h1 {
 }
 
 .about-p {
-    font-size: 22px;
+    font-size: 21px;
     color: var(--p-color);
     line-height: 1.5em;
 }
