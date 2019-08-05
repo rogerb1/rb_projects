@@ -91,6 +91,8 @@ figure img {
 figcaption {
     padding: .5em;
     background: var(--img-footer);
+    display: flex;
+    flex-direction: column;
     color: #fff;
     width: 100%;
     display: flex;
