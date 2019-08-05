@@ -32,6 +32,13 @@ span {
     color: hsl(123, 38%, 63%);
 }
 
+ul {
+    list-style-type: none;
+    line-height: 1.5;
+    font-size: 21px;
+    color: var(--p-color);
+}
+
 .main-grid {
     display: grid;
     grid-gap: 35px;
@@ -210,3 +217,6 @@ button:hover {
 /*******
     About.html 
 ***************************/
+.portrait {
+    pointer-events: none;
+}
