@@ -74,7 +74,7 @@ ul {
 }
 
 h1 {
-    font-size: 29px;
+    font-size: 33px;
     color: #333;
     letter-spacing: .03em;
     margin-bottom: 25px;
@@ -83,7 +83,7 @@ h1 {
 .about-p {
     font-size: 21px;
     color: var(--p-color);
-    line-height: 1.5em;
+    line-height: 1.7em;
 }
 
 /* Image container settings with hover animation ********/
