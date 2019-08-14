@@ -1,3 +1,3 @@
-# rb_projects
+# rb_projects code source
 
-The code source for my website
+You can view the HTML and CSS files.
